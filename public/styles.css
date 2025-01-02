@@ -1,0 +1,185 @@
+body {
+    padding: 20px;
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 20px auto;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    color: #bbbbbb;
+    margin-bottom: 12px;
+}
+
+label {
+    color: #cccccc;
+    font-weight: 500;
+}
+
+.centered-textarea {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 150px;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    resize: none;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 14px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.centered-textarea:focus {
+    border-color: #1a73e8;
+    outline: none;
+    background-color: #333;
+}
+
+.center-placeholder::placeholder {
+    text-align: center;
+    color: #777;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #155cb0;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.footer {
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #888888;
+    border-top: 1px solid #333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer p {
+    margin: 0;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navbar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+    padding: 10px 20px;
+}
+
+.nav-link {
+    color: #e0e0e0 !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #1a73e8 !important;
+}
+
+/* Form Check */
+.form-check {
+    display: flex;
+    margin-top: 10px;
+    padding: 14px;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-check:hover {
+    background-color: #333;
+    border-color: #555;
+}
+
+.form-check-input {
+    margin-right: 10px;
+    opacity: 0;
+}
+
+.form-check-input:checked + label {
+    color: #1a73e8;
+}
+
+#inputOfPrefix, #inputOfAdmin {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 14px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#inputOfPrefix:focus, #inputOfAdmin:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+#result {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#listOfCommands, #listOfCommandsEvent, #prefixOfCommands, #adminOfCommands {
+    border: none !important;
+    color: #ffffff;
+}
+
+.disable {
+    display: none;
+}
+
+.enable {
+    display: block;
+}
+a, button, input, textarea, .navbar, .footer, .container {
+    transition: all 0.3s ease;
+}
